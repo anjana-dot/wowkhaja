@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WOWKHAJA | Smart Canteen</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header>
+    <h1>WOWKHAJA</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#order">Order</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <h2>Smart Mess Management System</h2>
+    <p>Digital mess solution to reduce coupon usage, track calories, and improve efficiency in colleges.</p>
+  </section>
+
+  <!-- ===================== MENU ===================== -->
+  <section class="container" id="menu">
+    <h2 class="section-title">Food & Drinks Menu</h2>
+
+    <div class="calorie-box">
+      <span><strong>Daily Limit:</strong> 2000 kcal</span>
+      <span><strong>Consumed:</strong> <span id="usedCal">0</span> kcal</span>
+      <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+
+    <div class="food-grid">
+      <div class="food-card"><h3>Dal Bhat</h3><p>₹60 • 550 kcal</p><button onclick="addFood(550)">Add</button></div>
+      <div class="food-card"><h3>Veg Thali</h3><p>₹80 • 650 kcal</p><button onclick="addFood(650)">Add</button></div>
+      <div class="food-card"><h3>Chicken Curry</h3><p>₹120 • 750 kcal</p><button onclick="addFood(750)">Add</button></div>
+      <div class="food-card"><h3>Paneer Curry</h3><p>₹110 • 720 kcal</p><button onclick="addFood(720)">Add</button></div>
+      <div class="food-card"><h3>Veg Momos</h3><p>₹70 • 450 kcal</p><button onclick="addFood(450)">Add</button></div>
+      <div class="food-card"><h3>Milk Tea</h3><p>₹20 • 120 kcal</p><button onclick="addFood(120)">Add</button></div>
+        <div class="food-card"><h3>Chicken Chowmein</h3><p>₹90 • 620 kcal</p><button onclick="addFood(620)">Add</button></div>
+        <div class="food-card"><h3>Lemon Water</h3><p>₹25 • 60 kcal</p><button onclick="addFood(60)">Add</button></div>
+        <div class="food-card"><h3>Fruit Salad</h3><p>₹50 • 200 kcal</p><button onclick="addFood(200)">Add</button></div>
+        <div class="food-card"><h3>Egg Curry</h3><p>₹100 • 680 kcal</p><button onclick="addFood(680)">Add</button></div>
+        <div class="food-card"><h3>Veg Sandwich</h3><p>₹40 • 300 kcal</p><button onclick="addFood(300)">Add</button></div>
+        <div class="food-card"><h3>Chicken Burger</h3><p>₹130 • 800 kcal</p><button onclick="addFood(800)">Add</button></div>
+    </div>
+
+    <div class="warning" id="warning">⚠ Calorie limit exceeded. Please avoid extra meals.</div>
+  </section>
+
+  <!-- ===================== ORDER ===================== -->
+  <section class="container" id="order">
+    <h2 class="section-title">Place Order</h2>
+    <div class="order-box">
+      <p>Confirm meals digitally without coupons.</p>
+      <button onclick="placeOrder()">Place Order</button>
+      <div class="approved" id="approved">
+        <h3>✔ Order Approved</h3>
+        <p>Show this confirmation at the counter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="container" id="about">
+    <h2 class="section-title">Why WOWKHAJA?</h2>
+    <p class="about-text">
+      WOWKHAJA replaces traditional coupon-based mess systems with digital ordering, calorie monitoring, and transparent pricing.
+    </p>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>© 2025 WOWKHAJA | Smart Mess Solution</p>
+  </footer>
+
+  <script src="wow.js"></script>
+</body>
+</html>
